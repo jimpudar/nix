@@ -1,0 +1,10 @@
+# Build outputs from `nix build` / `home-manager build`
+result
+result-*
+
+# Local-only direnv state (only if you use direnv)
+.direnv/
+
+# Editor cruft you don't want anywhere
+.DS_Store
+*.swp

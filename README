@@ -1,0 +1,5 @@
+# update all packages
+nix flake update
+
+# switch to new config
+home-manager switch --flake .#jmp
