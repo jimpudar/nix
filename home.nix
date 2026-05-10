@@ -15,6 +15,7 @@
     nmap
     neovim
     yt-dlp
+    gh
 
     # embedded development ccache
     cmake
