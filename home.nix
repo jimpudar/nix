@@ -45,6 +45,10 @@
     syntaxHighlighting.enable = true;
     defaultKeymap = "emacs";
 
+    initContent = ''
+      [[ -r /Users/jmp/projects/agent-vm/completions/agent.zsh ]] && source /Users/jmp/projects/agent-vm/completions/agent.zsh
+    '';
+
     history = {
       size = 50000;
       save = 50000;
