@@ -30,6 +30,7 @@
   programs.home-manager.enable = true;
 
   home.sessionPath = [
+    "$HOME/bin"
     "$HOME/.local/bin"
   ];
 
