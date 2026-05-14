@@ -4,6 +4,7 @@
   home.stateVersion = "25.11";  # check the current home-manager release
 
   home.packages = with pkgs; [
+    bun
     nodejs
 
     # standard utilities
@@ -16,6 +17,7 @@
     neovim
     yt-dlp
     gh
+    shellcheck
 
     # embedded development ccache
     cmake
