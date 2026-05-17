@@ -27,6 +27,7 @@
 
     # agentic coding
     lima
+    vfkit
   ];
 
   programs.home-manager.enable = true;
