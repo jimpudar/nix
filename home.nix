@@ -86,7 +86,21 @@
     defaultKeymap = "emacs";
 
     initContent = ''
-      [[ -r /Users/jmp/projects/agent-vm/completions/agent.zsh ]] && source /Users/jmp/projects/agent-vm/completions/agent.zsh
+      _load_rootcell_completions() {
+        local completion_file=/Users/jmp/projects/agent-vm/completions/rootcell.zsh
+        local generated
+
+        if command -v rootcell >/dev/null 2>&1; then
+          if generated="$(SHELL=${pkgs.zsh}/bin/zsh rootcell completion 2>/dev/null)" && [[ -n "$generated" ]]; then
+            eval "$generated"
+            return
+          fi
+        fi
+
+        [[ -r "$completion_file" ]] && source "$completion_file"
+      }
+      _load_rootcell_completions
+      unset -f _load_rootcell_completions
     '';
 
     history = {
