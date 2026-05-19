@@ -32,6 +32,11 @@
 
   programs.home-manager.enable = true;
 
+  programs.git = {
+    enable = true;
+    lfs.enable = true;
+  };
+
   # Avoid a current Home Manager docs build warning under Determinate Nix.
   manual.manpages.enable = false;
 
