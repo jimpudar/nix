@@ -150,6 +150,8 @@ home-manager build --flake .#jmp  # or .#work
   LazyVim plugins are installed by `lazy.nvim` on first Neovim launch.
 - If an account already has unmanaged files under `~/.config/nvim`, move them
   aside before switching to this Home Manager configuration.
+- Rootcell shell integration assumes the project checkout exists at
+  `~/projects/rootcell` for `jmp` and `~/work/rootcell` for `work`.
 - The Home Manager profile is user-scoped; do not run `home-manager switch`
   with `sudo`.
 - Run each profile from the macOS account it manages.

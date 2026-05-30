@@ -25,6 +25,7 @@
             ./modules/common.nix
             ./modules/git.nix
             ./modules/neovim.nix
+            ./modules/rootcell.nix
             ./modules/zsh.nix
             ./modules/ghostty.nix
           ] ++ modules;

@@ -40,4 +40,9 @@
     pull.rebase = true;
     push.autoSetupRemote = true;
   };
+
+  programs.rootcell = {
+    enable = true;
+    projectDir = "work/rootcell";
+  };
 }
