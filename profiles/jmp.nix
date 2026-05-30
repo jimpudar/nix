@@ -14,6 +14,7 @@
     bun
     nodejs
     lima
+    opentofu
 
     cmake
     dfu-util
