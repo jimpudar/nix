@@ -10,6 +10,7 @@
 
     # Work tools.
     awscli2
+    azure-cli
     azurite
     binutils
     colima
