@@ -3,6 +3,7 @@
     fd
     ripgrep
     shellcheck
+    d2
     htop
     jq
     moreutils
